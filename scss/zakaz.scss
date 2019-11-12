@@ -1,0 +1,57 @@
+.zakaz {
+
+ .btn {
+ 	margin-left: 46px;
+
+ }
+ .main__title {
+ 	margin-left: 46px;
+ 	margin-top: 30px;
+ 	margin-bottom: 35px;
+ }
+}
+.bg-zakaz {
+	 background-color: #ededed;
+}
+.zakaz-wrap {
+	display: flex;
+	width: 100%;
+	margin: 0 auto;
+	margin-top: 40px;
+}
+.left-zakaz {
+	position: relative;
+	/* Style for "Прямоуголь" */
+	width: 424px;
+	height: 445px;
+	border-radius: 5px 0 0 5px;
+	background-color: #2c3f4d;
+}
+.right-zakaz {
+	background-color: #ededed;
+}
+.img-zakaz {
+	position: absolute;
+	top: -40px;
+	left: 47px;
+}
+.big-num {
+	color: #ff6470;
+	margin-left: 50px;
+	font-size: 25px;
+	font-weight: 800;
+	text-transform: uppercase;
+}
+.plan-block {
+	display: flex;
+	text-align: center;
+	align-items: center;
+	margin-bottom: 43px;
+	.subtitle-16 {
+		margin-left: 10px;
+	}
+}
+.subtitle-16 {
+	font-size: 16px;
+	font-weight: 500;
+}
