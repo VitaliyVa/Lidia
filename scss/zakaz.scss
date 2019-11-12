@@ -44,7 +44,7 @@
 }
 .plan-block {
 	display: flex;
-	text-align: center;
+	
 	align-items: center;
 	margin-bottom: 43px;
 	.subtitle-16 {
@@ -54,4 +54,41 @@
 .subtitle-16 {
 	font-size: 16px;
 	font-weight: 500;
+}
+@media (max-width: 879px) {
+	.zakaz-wrap {
+	    display: -webkit-box;
+	    display: -ms-flexbox;
+	    display: flex;
+	    width: 100%;
+	    margin: 0 auto;
+	    margin-top: 40px;
+	    flex-direction: column;
+	    align-items: center;
+	    padding-top: 50px;
+	}
+	.right-zakaz {
+	    background-color: #ededed;
+	    padding: 0 15px;
+	}
+	.left-zakaz {
+
+	}
+	.zakaz .btn {
+    margin-left: 46px;
+    margin-bottom: 50px;
+	}
+}
+@media (max-width: 499px) {
+	.left-zakaz {
+		width: 300px;
+		height: 262px;
+
+		img {
+			width: 87%;
+		}
+	}
+}
+@media (max-width: 420px) {
+
 }
