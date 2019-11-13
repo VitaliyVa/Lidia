@@ -300,7 +300,10 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    width: 315px; } }
+    width: 315px; }
+
+  .right-mini-wrap {
+    width: 320px; } }
 @media (max-width: 420px) {
   .left-model-prof {
     width: 320px; }
@@ -392,8 +395,7 @@
     padding-top: 50px; }
 
   .right-zakaz {
-    background-color: #ededed;
-    padding: 0 15px; }
+    background-color: #ededed; }
 
   .zakaz .btn {
     margin-left: 46px;
@@ -431,7 +433,6 @@
   position: relative;
   /* Style for "Прямоуголь" */
   width: 363px;
-  height: 200px;
   border-radius: 5px;
   background-color: #fff;
   padding: 30px;
@@ -461,8 +462,7 @@
         justify-content: space-around; }
 
   .comment-profile {
-    margin-bottom: 20px;
-    height: 165px; } }
+    margin-bottom: 20px; } }
 @media (max-width: 1022px) {
   .btn-surp {
     margin-right: 150px;
@@ -526,6 +526,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-bottom: 20px;
   cursor: pointer; }
   .what-prof:hover .kolo {
     background: #ff6470; }
