@@ -1,6 +1,6 @@
 @charset "UTF-8";
 .header {
-  background: url("../img/header/bg-1.png") no-repeat center top/cover; }
+  background: url("https://b.radikal.ru/b15/1911/28/b8cefe5617c9.png") no-repeat center top/cover; }
   .header .btn {
     margin-top: 65px; }
 
@@ -28,6 +28,8 @@
 
 .right-img {
   margin-top: 25px; }
+  .right-img img {
+    height: auto; }
 
 .subtitle-18 {
   color: #2e2e2e;
@@ -49,31 +51,36 @@
   border-radius: 5px;
   text-transform: uppercase; }
 
-.btn:hover {
-  -webkit-box-shadow: none;
-          box-shadow: none;
-  -webkit-animation: si-button-pulse 0.8s 0s ease-out 1;
-  animation: si-button-pulse 0.8s 0s ease-out 1;
-  overflow: hidden; }
-
-.btn {
-  overflow: visible !important; }
-
-@-webkit-keyframes si-button-pulse {
-  from {
-    -webkit-box-shadow: 0 0 8px 6px #66D727, 0 0 12px 14px #3DD32B;
-            box-shadow: 0 0 8px 6px #66D727, 0 0 12px 14px #3DD32B; }
+@-webkit-keyframes hvr-pulse-shrink {
   to {
-    -webkit-box-shadow: 0 0 10px 4px rgba(255, 48, 26, 0), 0 0 5px 30px rgba(255, 48, 26, 0);
-            box-shadow: 0 0 10px 4px rgba(255, 48, 26, 0), 0 0 5px 30px rgba(255, 48, 26, 0); } }
-
-@keyframes si-button-pulse {
-  from {
-    -webkit-box-shadow: 0 0 8px 6px #66D727, 0 0 12px 14px #3DD32B;
-            box-shadow: 0 0 8px 6px #66D727, 0 0 12px 14px #3DD32B; }
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9); } }
+@keyframes hvr-pulse-shrink {
   to {
-    -webkit-box-shadow: 0 0 10px 4px rgba(255, 48, 26, 0), 0 0 5px 30px rgba(255, 48, 26, 0);
-            box-shadow: 0 0 10px 4px rgba(255, 48, 26, 0), 0 0 5px 30px rgba(255, 48, 26, 0); } }
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9); } }
+.hvr-pulse-shrink {
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+          box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale; }
+
+.hvr-pulse-shrink:hover, .hvr-pulse-shrink:focus, .hvr-pulse-shrink:active {
+  -webkit-animation-name: hvr-pulse-shrink;
+  animation-name: hvr-pulse-shrink;
+  -webkit-animation-duration: 0.3s;
+  animation-duration: 0.3s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate; }
+
 @media (max-width: 1364px) {
   .right-img img {
     width: 80%; } }
@@ -86,6 +93,7 @@
     position: absolute;
     width: 100%;
     top: 150px;
+    left: 20px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -155,7 +163,12 @@
   height: 190px;
   border-radius: 10px;
   background-color: #2a252c;
-  margin-bottom: 32px; }
+  margin-bottom: 32px;
+  cursor: pointer; }
+  .left-model-prof:hover .order {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+    color: #3ad92e; }
 
 .img-model {
   position: absolute;
@@ -183,12 +196,20 @@
   font-size: 12px;
   font-weight: 800;
   text-transform: uppercase;
-  cursor: pointer; }
+  cursor: pointer;
+  -webkit-transition: color .2s, -webkit-transform .2s;
+  transition: color .2s, -webkit-transform .2s;
+  transition: transform .2s, color .2s;
+  transition: transform .2s, color .2s, -webkit-transform .2s; }
 
 .znak {
   margin-left: 6px;
   font-weight: 400;
-  font-size: 10px; }
+  font-size: 10px;
+  -webkit-transition: -webkit-transform .2s;
+  transition: -webkit-transform .2s;
+  transition: transform .2s;
+  transition: transform .2s, -webkit-transform .2s; }
 
 .models-wrap {
   display: -webkit-box;
@@ -304,6 +325,15 @@
 
   .right-mini-wrap {
     width: 320px; } }
+@media (max-width: 459px) {
+  .pref-wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+
+  .pref-profile {
+    margin: 0 auto; } }
 @media (max-width: 420px) {
   .left-model-prof {
     width: 320px; }
@@ -407,7 +437,7 @@
     .left-zakaz img {
       width: 87%; } }
 .reviews {
-  background: url("../img/bg-rev.png") no-repeat center top/cover;
+  background: url("https://b.radikal.ru/b11/1911/0a/4637fbb6bf65.png") no-repeat center top/cover;
   padding-bottom: 65px; }
   .reviews .btn {
     margin: 0 auto;
@@ -522,7 +552,6 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  text-align: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -564,6 +593,15 @@
   padding-top: 20px;
   padding-bottom: 20px; }
 
+@media (max-width: 629px) {
+  .mobile-wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; } }
 body {
   margin: 0;
   padding: 0;
@@ -583,5 +621,8 @@ h1, h2, h3, h4, h5 {
 .container {
   max-width: 1200px;
   margin: 0 auto; }
+
+a {
+  text-decoration: none; }
 
 /*# sourceMappingURL=style.css.map */

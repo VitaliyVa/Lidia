@@ -1,5 +1,5 @@
 .header {
-	background: url('../img/header/bg-1.png') no-repeat center top / cover;
+	background: url('https://b.radikal.ru/b15/1911/28/b8cefe5617c9.png') no-repeat center top / cover;
 	
 
 	.btn {
@@ -28,6 +28,11 @@
 }
 .right-img {
 	margin-top: 25px;
+
+	img {
+		
+		height: auto;
+	}
 }
 .subtitle-18 {
 	color: #2e2e2e;
@@ -48,21 +53,43 @@
 	border-radius: 5px;
 	text-transform: uppercase;
 }
-.btn:hover{
-    box-shadow: none;
-    -webkit-animation: si-button-pulse 0.8s 0s ease-out 1;
-    -moz-animation: si-button-pulse 0.8s 0s ease-out 1;
-    animation: si-button-pulse 0.8s 0s ease-out 1;
-    overflow: hidden;
+@-webkit-keyframes hvr-pulse-shrink {
+  to {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
 }
-.btn {
-    overflow: visible !important;
-}
-@keyframes si-button-pulse {
-    from {box-shadow: 0 0 8px 6px #66D727, 0 0 12px 14px #3DD32B;}
 
-    to {box-shadow: 0 0 10px 4px rgba(255, 48, 26, 0), 0 0 5px 30px rgba(255, 48, 26, 0);}
+@keyframes hvr-pulse-shrink {
+  to {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
 }
+
+.hvr-pulse-shrink {
+  
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+}
+.hvr-pulse-shrink:hover, .hvr-pulse-shrink:focus, .hvr-pulse-shrink:active {
+  -webkit-animation-name: hvr-pulse-shrink;
+  animation-name: hvr-pulse-shrink;
+  -webkit-animation-duration: 0.3s;
+  animation-duration: 0.3s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;
+}
+
 @media (max-width: 1364px) {
 	.right-img {
 		img {
@@ -79,6 +106,7 @@
 	    position: absolute;
 	    width: 100%;
 	    top: 150px;
+	    left: 20px;
 	    display: flex;
 	    margin-top: 25px;
 	    

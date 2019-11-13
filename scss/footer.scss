@@ -18,3 +18,9 @@
 	padding-bottom: 20px;
 
 }
+@media (max-width: 629px) {
+	.mobile-wrap {
+		display: flex;
+		flex-direction: column;
+	}
+}
