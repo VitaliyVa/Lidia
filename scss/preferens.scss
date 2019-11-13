@@ -212,7 +212,7 @@
 		
 	}
 	.right-mini-wrap {
-		width: 320px;
+		width: 310px;
 	}
 
 }
@@ -222,14 +222,15 @@
 	}
 	.pref-profile {
 		margin: 0 auto;
+		margin-top: 20px;
 	}
 }
 @media (max-width: 420px) {
 	.left-model-prof {
-		width: 320px;
+		width: 310px;
 	}
 	#left-model-prof-4 {
-		width: 320px;
+		width: 310px;
 	}
 	.right-mini-wrap {
 		flex-direction: column;

@@ -128,6 +128,7 @@
 @media (max-width: 551px) {
 	.right-img {
 		img {
+			height: auto;
 			width: 66%;
 		}
 	}
@@ -138,6 +139,7 @@
 	    margin-bottom: 415px;
 	}
 	.right-img {
+		left: 0;
 		img {
 			width: 66%;
 		}
