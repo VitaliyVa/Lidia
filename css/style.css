@@ -3,6 +3,8 @@
   background: url("https://b.radikal.ru/b15/1911/28/b8cefe5617c9.png") no-repeat center top/cover; }
   .header .btn {
     margin-top: 65px; }
+  .header .subtitle-18 {
+    display: block; }
 
 .header__title {
   font-size: 30px;
@@ -29,7 +31,7 @@
 .right-img {
   margin-top: 25px; }
   .right-img img {
-    height: auto; }
+    height: initial; }
 
 .subtitle-18 {
   color: #2e2e2e;
@@ -60,6 +62,7 @@
     -webkit-transform: scale(0.9);
     transform: scale(0.9); } }
 .hvr-pulse-shrink {
+  display: inline-block;
   vertical-align: middle;
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
@@ -258,6 +261,7 @@
   top: -23px; }
 
 .right-mini-wrap {
+  max-width: 363px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -324,10 +328,7 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    width: 315px; }
-
-  .right-mini-wrap {
-    width: 310px; } }
+    width: 315px; } }
 @media (max-width: 459px) {
   .pref-wrap {
     -webkit-box-orient: vertical;
@@ -346,6 +347,7 @@
     width: 310px; }
 
   .right-mini-wrap {
+    width: 310px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;

@@ -137,6 +137,7 @@
 	top: -23px;
 }
 .right-mini-wrap {
+	max-width: 363px;
 	display: flex;
 	justify-content: space-between;
 }
@@ -211,9 +212,7 @@
 		width: 315px;
 		
 	}
-	.right-mini-wrap {
-		width: 310px;
-	}
+	
 
 }
 @media (max-width: 459px) {
@@ -232,7 +231,10 @@
 	#left-model-prof-4 {
 		width: 310px;
 	}
+	
+	
 	.right-mini-wrap {
+		width: 310px;
 		flex-direction: column;
 		align-items: center;
 

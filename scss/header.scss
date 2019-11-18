@@ -5,6 +5,9 @@
 	.btn {
 		margin-top: 65px;
 	}
+	.subtitle-18 {
+		display: block;
+	}
 }
 .header__title {
 	font-size: 30px;
@@ -31,7 +34,7 @@
 
 	img {
 		
-		height: auto;
+		height: initial;
 	}
 }
 .subtitle-18 {
@@ -41,6 +44,7 @@
 	font-weight: 400;
 }
 .btn {
+
 	background-image: linear-gradient(to right, #2cc121 0%, #3ada2e 100%);
 	color: #ffffff;
 	width: 255px;
@@ -68,7 +72,7 @@
 }
 
 .hvr-pulse-shrink {
-  
+  display: inline-block;
   vertical-align: middle;
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
